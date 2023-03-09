@@ -47,6 +47,6 @@ final class CentralManagerDelegate: NSObject, CBCentralManagerDelegate {
     }
 
     func centralManager(_ central: CBCentralManager, willRestoreState: [String : Any]) {
-
+        NSLog("willRestoreState")
     }
 }
