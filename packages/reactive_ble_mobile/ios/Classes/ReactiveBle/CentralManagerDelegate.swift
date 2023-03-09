@@ -45,4 +45,8 @@ final class CentralManagerDelegate: NSObject, CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         onConnectionChange(peripheral, .disconnected(error))
     }
+
+    func centralManager(_ central: CBCentralManager, willRestoreState: [String : Any]) {
+
+    }
 }
